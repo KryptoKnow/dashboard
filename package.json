@@ -1,0 +1,25 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "The kryptoknow dashboard",
+  "scripts": {
+    "clean": "rm -Rf ./dist",
+    "build": "echo 'Nothing to do'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KryptoKnow/dashboard.git"
+  },
+  "keywords": [],
+  "author": "kryptoknow",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/KryptoKnow/dashboard/issues"
+  },
+  "homepage": "https://github.com/KryptoKnow/dashboard#readme"
+}
