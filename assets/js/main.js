@@ -36,10 +36,25 @@ jQuery(document).ready(function ($) {
 
   loadContent();
 
-
   function loadContent() {
-    $('#left-panel').load('content/navbar.html');
-    $('#header').load('content/header.html');
-    $('#main-container').load('content/home.html');
+    $('#left-panel').load('navbar.html');
+    $('#header').load('header.html');
+    $('#main-container').load('pages/home.html');
   }
 });
+
+function loadPage(pageName, event) {
+  event.preventDefault();
+  const target = jQuery(event.target);
+  const parentUL = target.parents('ul').get(0);
+  const currentLI = target.parents('li').get(0);
+  disableAllaNavBarItems(parentUL);
+  jQuery(currentLI).addClass('active');
+  jQuery('#main-container').load('pages/' + pageName + '.html');
+}
+
+function disableAllaNavBarItems(ul) {
+  jQuery(ul).find('li').each(function () {
+    jQuery(this).removeClass('active');
+  })
+}
