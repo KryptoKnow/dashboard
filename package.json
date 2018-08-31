@@ -4,7 +4,7 @@
   "description": "The kryptoknow dashboard",
   "scripts": {
     "clean": "rm -Rf ./dist",
-    "build": "echo 'Nothing to do'",
+    "build": "mkdir -p dist && cp *.html dist && cp -r assets dist && cp -r images dist",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
