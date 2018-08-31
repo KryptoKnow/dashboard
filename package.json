@@ -6,7 +6,8 @@
     "clean": "rm -Rf ./dist",
     "build": "mkdir -p dist && cp *.html dist && cp -r assets dist && cp -r images dist && cp CNAME dist",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "dev": "nodemon ./index.js"
   },
   "repository": {
     "type": "git",
@@ -16,6 +17,7 @@
   "author": "kryptoknow",
   "license": "ISC",
   "devDependencies": {
+    "express": "^4.16.3",
     "gh-pages": "^1.2.0"
   },
   "bugs": {
