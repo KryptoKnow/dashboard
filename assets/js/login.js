@@ -32,12 +32,12 @@ jQuery(document).ready(function ($) {
 
   function showLogin() {
     $('body').addClass('bg-dark');
-    $('#main-container').hide();
+    $('#body-container').hide();
     $('#login-form-container').show();
   }
 
   function hideLogin() {
-    $('#main-container').show();
+    $('#body-container').show();
     $('body').removeClass('bg-dark');
     $('#login-form-container').hide();
   }
