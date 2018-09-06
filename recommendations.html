@@ -50,13 +50,13 @@
               <li>
                 <a href="index.html"> <i class="menu-icon fa fa-dashboard"></i>Portfolio</a>
               </li>
-              <li class="active">
+              <li>
                 <a href="watchlist.html"> <i class="menu-icon fa fa-th-list"></i>Watchlist</a>
               </li>
               <li>
                 <a href="market.html"> <i class="menu-icon fa fa-bar-chart"></i>Market</a>
               </li>
-              <li>
+              <li class="active">
                 <a href="recommendations.html"> <i class="menu-icon fa fa-trophy"></i>Recommendations</a>
               </li>
             </ul>
@@ -201,7 +201,7 @@
           <div class="col-sm-4">
             <div class="page-header float-left">
               <div class="page-title">
-                <h1>Watchlist</h1>
+                <h1>Recommendations</h1>
               </div>
             </div>
           </div>
@@ -209,7 +209,7 @@
             <div class="page-header float-right">
               <div class="page-title">
                 <ol class="breadcrumb text-right">
-                  <li class="active">Watchlist</li>
+                  <li class="active">Recommendations</li>
                 </ol>
               </div>
             </div>
@@ -219,111 +219,6 @@
         <div class="content mt-3">
 
           <!-- First Watchlist ROW -->
-
-          <div class="row form-group">
-            <div class="col-lg-12 col-md-12">
-              <div class="input-group">
-                <input type="text" id="input2-group2" name="input2-group2" placeholder="Search for cryptocurrency" class="form-control">
-                <div class="input-group-btn">
-                  <button class="btn btn-primary">
-                    <i class="fa fa-search"></i>
-                    Search
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Second Watchlist ROW -->
-
-          <div class="col-lg-6 col-md-3">
-            <div class="card">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <h4 class="card-title mb-0">Bitcoin</h4>
-                    <div class="small text-muted">Last 3 months</div>
-                  </div>
-                </div>
-                <div class="chart-wrapper mt-4">
-                  <canvas id="bitcoinWatchChart" style="height:322px;" height="322"></canvas>
-                </div>
-              </div>
-              <div class="card-footer">
-                <div class="row text-center">
-                  <div class="col-sm-4">
-                    <div class="text-muted">BUY</div>
-                  </div>
-                  <div class="col-sm-4">
-                    <strong>SELL</strong>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="text-muted">HOLD</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-3">
-            <div class="card">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <h4 class="card-title mb-0">Ethereum</h4>
-                    <div class="small text-muted">Last 3 months</div>
-                  </div>
-                </div>
-                <div class="chart-wrapper mt-4">
-                  <canvas id="ethereumWatchChart" style="height:322px;" height="322"></canvas>
-                </div>
-              </div>
-              <div class="card-footer">
-                <div class="row text-center">
-                  <div class="col-sm-4">
-                    <div class="text-muted">BUY</div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="text-muted">SELL</div>
-                  </div>
-                  <div class="col-sm-4">
-                    <strong>HOLD</strong>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Third Watchlist ROW -->
-
-          <div class="col-lg-6 col-md-3">
-            <div class="card">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <h4 class="card-title mb-0">Ripple</h4>
-                    <div class="small text-muted">Last 3 months</div>
-                  </div>
-                </div>
-                <div class="chart-wrapper mt-4">
-                  <canvas id="rippleWatchChart" style="height:322px;" height="322"></canvas>
-                </div>
-              </div>
-              <div class="card-footer">
-                <div class="row text-center">
-                  <div class="col-sm-4">
-                    <div class="text-muted">BUY</div>
-                  </div>
-                  <div class="col-sm-4">
-                    <strong>SELL</strong>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="text-muted">HOLD</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
           <div class="col-lg-6 col-md-3">
             <div class="card">
@@ -335,7 +230,7 @@
                   </div>
                 </div>
                 <div class="chart-wrapper mt-4">
-                  <canvas id="moneroWatchChart" style="height:322px;" height="322"></canvas>
+                  <canvas id="moneroRecommChart" style="height:322px;" height="322"></canvas>
                 </div>
               </div>
               <div class="card-footer">
@@ -353,8 +248,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Fourth Watchlist ROW -->
 
           <div class="col-lg-6 col-md-3">
             <div class="card">
@@ -366,7 +259,7 @@
                   </div>
                 </div>
                 <div class="chart-wrapper mt-4">
-                  <canvas id="adaWatchChart" style="height:322px;" height="322"></canvas>
+                  <canvas id="adaRecommChart" style="height:322px;" height="322"></canvas>
                 </div>
               </div>
               <div class="card-footer">
@@ -379,35 +272,6 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="text-muted">HOLD</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-3">
-            <div class="card">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <h4 class="card-title mb-0">IOTA</h4>
-                    <div class="small text-muted">Last 3 months</div>
-                  </div>
-                </div>
-                <div class="chart-wrapper mt-4">
-                  <canvas id="iotaWatchChart" style="height:322px;" height="322"></canvas>
-                </div>
-              </div>
-              <div class="card-footer">
-                <div class="row text-center">
-                  <div class="col-sm-4">
-                    <div class="text-muted">BUY</div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="text-muted">SELL</div>
-                  </div>
-                  <div class="col-sm-4">
-                    <strong>HOLD</strong>
                   </div>
                 </div>
               </div>
@@ -430,7 +294,7 @@
     <script src="assets/js/lib/chart-js/chartjs-init.js"></script>
     <script src="assets/js/dashboard.js"></script>
     <script src="assets/js/widgets.js"></script>
-    <script src="assets/js/watchCharts.js"></script>
+    <script src="assets/js/recomCharts.js"></script>
     <script src="assets/js/lib/vector-map/jquery.vmap.js"></script>
     <script src="assets/js/lib/vector-map/jquery.vmap.min.js"></script>
     <script src="assets/js/lib/vector-map/jquery.vmap.sampledata.js"></script>
